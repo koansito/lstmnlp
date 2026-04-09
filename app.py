@@ -42,7 +42,7 @@ st.markdown("""
 
 
 # ── Funciones ─────────────────────────────────────────────────────────────────
-image = Image.open('carlos.jpg')
+image = Image.open('perrito.jpg')
 
 st.image(image,width=3000)
 
