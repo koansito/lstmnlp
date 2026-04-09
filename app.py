@@ -8,6 +8,7 @@ import numpy as np
 import json
 import time
 import os
+from PIL import Image
 
 st.set_page_config(
     page_title="Generador LSTM",
@@ -39,7 +40,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+
 # ── Funciones ─────────────────────────────────────────────────────────────────
+image = Image.open('carlos.jpg')
+
+st.image(image,width=3000)
 
 @st.cache_resource
 def load_model_and_metadata(model_path, metadata_path):
