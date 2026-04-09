@@ -44,7 +44,7 @@ st.markdown("""
 # ── Funciones ─────────────────────────────────────────────────────────────────
 image = Image.open('perrito.jpg')
 
-st.image(image,width=3000)
+st.image(image,width=1000)
 
 @st.cache_resource
 def load_model_and_metadata(model_path, metadata_path):
